@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 始めに
+amazonのwebサイトを模倣し、学習することを目的としたリポジトリです。
+下記の環境設定を参考にしてセットアップをしてください。
 
-## Getting Started
+# 環境設定
+## Node.js のインストール
+### MacOS
+_Homebrew のインストール（インストールされていない場合）_
 
-First, run the development server:
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+_Node.js のインストール_
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    brew install node
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Windows
+_Node.js のダウンロードとインストール_
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Node.js の公式ウェブサイト にアクセスし、最新の LTS バージョンをダウンロードしてインストールします。
+詳細は[プロゲート](https://prog-8.com/docs/nodejs-env-win)の説明が分かりやすいです。
 
-## Learn More
+## Next.js プロジェクトのセットアップ
 
-To learn more about Next.js, take a look at the following resources:
+開発サーバーの起動
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+これで、開発サーバーが起動し、ブラウザで http://localhost:3000 にアクセスしてアプリケーションを確認できます。
 
-## Deploy on Vercel
+app/page.js を編集することでページの編集を始めることができます。ファイルを編集するとページは自動的に更新されます。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 詳細情報
+Next.js についての詳細は以下のリソースを参照してください:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* [Next.js ドキュメント](https://nextjs-ja-translation-docs.vercel.app/docs/getting-started) - Next.js の機能と API について学べます。
+
+# Vercel へのデプロイ
+~~Next.js アプリをデプロイする最も簡単な方法は、Next.js の作成者が提供する Vercel プラットフォーム を使用することです。~~
+
