@@ -4,7 +4,7 @@ const page = () => {
     return(
         <div>
             <Header></Header>
-            <h1>ホーム</h1>
+            <h1>ホーム_s</h1>
         </div>
     )
 }
