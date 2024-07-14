@@ -25,11 +25,11 @@ const page = () => {
                     </div>
                 </section>
             </div>
+            {/*1話無料のテレビ番組*/}
+            <p style={{fontSize: '25px',marginLeft: '5%'}}>
+                第1話無料のTV番組&emsp;<a href={mahoyo}>すべて見る {'>'}</a>
+            </p>
             <div className={styles.episode1Free}>
-                {/*1話無料のテレビ番組*/}
-                <p style={{fontSize: '20px'}}>
-                    第1話無料のTV番組&emsp;<a href={mahoyo}>すべて見る {'>'}</a>
-                </p>
                 <section>
                     <ul style={{display: 'flex'}}>
                         <div className={styles.freeVideo}>
