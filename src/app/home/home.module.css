@@ -1,0 +1,23 @@
+.subtitle{
+    color: white;
+    font-weight: bold;
+}
+
+.ul_list{
+    display: flex;
+    list-style:none;
+}
+
+.bigTitle{
+    display: inline-block;
+}
+
+.imgTop{
+    width: 70%;
+    height: 70%;
+}
+
+.imgmenu{
+    width: 90%;
+    height: 90%;
+}
