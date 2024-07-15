@@ -10,15 +10,12 @@ import tensura from './images/tensura.webp'
 import nigewaka from './images/nigewaka.jpg'
 
 const page = () => {
+    //bodyは上位のコンポーネント内（app/layout.js）で宣言されてるので必要なし
+    //背景色はdivをうまく使って変えてみて
     return(
-        <body bgcolor='black'>
-            <header>
-            <Header></Header>
-            </header>
+        <body bgcolor='black'> 
+            <Header/>
             <div>
-                <header>
-                    「ホーム　ストア　ライブTV　カテゴリー　マイアイテム」へのリンク
-                </header>
                 <div>//ホームTOP_オススメ10選
                     <ul className={styles.ul_list}>
                         <li>
