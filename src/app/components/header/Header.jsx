@@ -1,5 +1,6 @@
 import styles from './header.module.css'
 import Link from "next/link";
+import Image from 'next/image'
 import { SiAmazonprime } from "react-icons/si";
 import { AiFillEnvironment } from "react-icons/ai";
 import { IoMdSearch } from "react-icons/io";
@@ -15,7 +16,7 @@ const Header = () => {
                 <div className={styles.left}>
                     <div className={styles.icon}>
                         <Link href='/home'>
-                            <SiAmazonprime size={'10em'} className={styles.svg} color={'#d6d6d6'}/>
+                            <Image src='/amazon_prime.png' width={145} height={48}></Image>
                         </Link>
                     </div>
                     <div className={styles.address}>
@@ -38,7 +39,7 @@ const Header = () => {
                                     <div className={styles.dropdown_card_label}>
                                         <div className={styles.facade}>
                                             <span className={styles.facade_label}>PrimeVideo</span>
-                                            <icon className={styles.facade_icon}>▼</icon>
+                                            <span className={styles.facade_icon}>▼</span>
                                         </div>
                                     </div>
                                     <select  className={styles.search_dropdown}>
@@ -89,7 +90,6 @@ const Header = () => {
                             </div>
                             <span className={styles.account_label}>
                                 注文履歴
-                                <span className={styles.re_triangle}>▼</span>
                             </span>
                         </Link>
                         <Link href={'/'} className={styles.cart_area}>
