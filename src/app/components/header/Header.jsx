@@ -9,6 +9,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { SiPrimevideo } from 'react-icons/si';
 import { CgProfile } from "react-icons/cg";
 
+//test2
 const Header = () => {
     return(
         <>
