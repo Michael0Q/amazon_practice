@@ -13,18 +13,27 @@ const page = () => {
     //bodyは上位のコンポーネント内（app/layout.js）で宣言されてるので必要なし
     //背景色はdivをうまく使って変えてみて
     return(
-        <body bgcolor='black'> 
-            <Header/>
-            <div>
+        <body>
+            <header>
+                <Header></Header>
+            </header>
+            <div className={styles.haikei}>
                 <div>//ホームTOP_オススメ10選
                     <ul className={styles.ul_list}>
                         <li>
                             <article>
-                                <p className={styles.subtitle}>作品タイトル</p>
                                 <button>
                                     <div>再生</div>
                                 </button>
                                 <a href={sikkaku}><Image src={sikkaku} className={styles.imgTop} alt=''/></a>
+                                <section class="">
+                                    <h2 className={styles.subtitle}>作品タイトル</h2>
+                                    <div>
+                                        <div>▷</div>
+                                        <label>☑</label>
+                                        <label>i</label>
+                                    </div>
+                                </section>
                             </article>
                         </li>
                     </ul>
