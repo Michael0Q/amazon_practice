@@ -6,7 +6,7 @@ import mahoyo from './images/mahoyo_anime.png'
 const page = () => {
     console.log(mahoyo)
     return(  
-        <body>
+        <div>
             <header>
             <Header></Header>
             </header>
@@ -46,7 +46,7 @@ const page = () => {
                 </section>
             </div>
             </main>
-        </body>
+        </div>
     )
 }
 
