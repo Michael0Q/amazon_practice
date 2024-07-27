@@ -14,9 +14,7 @@ const page = () => {
     //背景色はdivをうまく使って変えてみて
     return(
         <body>
-            <header>
-                <Header></Header>
-            </header>
+            <Header></Header>
             <div className={styles.haikei}>
                 <div>//ホームTOP_オススメ10選
                     <ul className={styles.ul_list}>
