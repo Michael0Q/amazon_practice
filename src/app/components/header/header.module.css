@@ -1,3 +1,24 @@
+.link:hover{
+    /* padding: 0 7px 0 5px; */
+    border: 1px solid white;
+    outline: 0;
+    border-radius: 2px;
+}
+
+@keyframes reversasion {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+        color: red;
+    }
+}
+
+.re_triangle_hover{
+    color: inherit;
+}
+
 .header{
     display: flex;
     position: static;
@@ -22,10 +43,11 @@
 }
 
 .icon{
-    margin-top: 5px;
+    margin: 1px;
+    margin-top: 2px;
     left: 0;
-    width: 108px;
-    height: 100%;
+    width: 100%;
+    height: 59px;
 }
 
 .svg{
@@ -43,7 +65,7 @@
 .address{
     width: auto;
     height: 60px;
-    margin-left: 40px;
+    margin-left: 10px;
     display: flex;
     position: static;
     float: none;
@@ -126,6 +148,7 @@
 
 .search{
     padding: 10px 4px 10px 3px;
+    margin: 0px 6px;
     height: 60px;
     display: flex;
     position: static;
@@ -156,10 +179,7 @@
     bottom: 0;
     left: 0;
     background-color: #e6e6e6;
-    border-left: #e6e6e6;
-    border-top: #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
-    height: 39px;
+    height: 39.5px;
     margin:0;
     padding-left: 5px;
     overflow: hidden;
@@ -269,11 +289,15 @@
     display: flex;
     position: static;
     float: none;
-    background-color: #91f6fe;
+    background-color: #febd69;
     border: none;
     width: 45px;
     height: 41px;
     border-radius: 0 4px 4px 0;
+}
+
+.serach_submit:hover{
+    background-color: #f3a847
 }
 
 .search_span{
@@ -378,6 +402,7 @@
     height: 0;
     font-size: 0;
     line-height: 0;
+    z-index: 10;
 }
 
 .acount_list{
@@ -604,7 +629,6 @@
 
 .primevideo_haeder{
     height: 38px;
-    margin-top: -5px;
     background-color: #00050d;
 }
 
@@ -614,6 +638,11 @@
     flex-flow: row nowrap;
     float: none;
     justify-content: center;
+    align-items: center;
+}
+
+.primevideo_logo_a{
+    height: 18px
 }
 
 .primevideo_orderedList{
@@ -621,6 +650,7 @@
     flex-direction: row nowrap;
     overflow: hidden;
     list-style-type: none;
+    color: #aaa;
 }
 
 .primevideo_li{
@@ -628,16 +658,20 @@
     padding: 0 12px 0 12px;
 }
 
-.primevideo_label{
-    
+.primevideo_label:hover {
+    color: white;
 }
 
 .primevideo_a{
     z-index: 300;
-    color: #aaa;
+    color: inherit;
     text-decoration: none;
 }
 
 .primevideo_profile{
-    margin: 12px 0 0 30px;
+    margin: 6px 0 0 30px;
+}
+
+.primevideo_profile:hover{
+    background-color: #191e25;
 }
