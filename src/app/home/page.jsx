@@ -10,6 +10,8 @@ import tensura from './images/tensura.webp'
 import nigewaka from './images/nigewaka.jpg'
 
 const page = () => {
+    //bodyは上位のコンポーネント内（app/layout.js）で宣言されてるので必要なし
+    //背景色はdivをうまく使って変えてみようね
     return(
         <body>
             <Header></Header>
