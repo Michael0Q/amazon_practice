@@ -24,7 +24,7 @@ const page = () => {
                                     <div>再生</div>
                                 </button>
                                 <a href={sikkaku}><Image src={sikkaku} className={styles.imgTop} alt=''/></a>
-                                <section class="">
+                                <section>
                                     <h2 className={styles.subtitle}>作品タイトル</h2>
                                     <div>
                                         <div>▷</div>
@@ -71,7 +71,7 @@ const page = () => {
                     <ul className={styles.ul_list}>
                         <li>
                             <article className={styles.bigTitle}>
-                               <a href></a>
+                               <a href=' '></a>
                             </article>
                         </li>
                         <li></li>
@@ -85,7 +85,7 @@ const page = () => {
                     <ul className={styles.ul_list}>
                         <li>
                             <article className={styles.bigTitle}>
-                               <a href></a>
+                               <a href=' '></a>
                             </article>
                         </li>
                         <li></li>
@@ -99,7 +99,7 @@ const page = () => {
                     <ul className={styles.ul_list}>
                         <li>
                             <article className={styles.bigTitle}>
-                               <a href></a>
+                               <a href=' '></a>
                             </article>
                         </li>
                         <li></li>
@@ -113,7 +113,7 @@ const page = () => {
                     <ul className={styles.ul_list}>
                         <li>
                             <article className={styles.bigTitle}>
-                               <a href></a>
+                               <a href=' '></a>
                             </article>
                         </li>
                         <li></li>
@@ -127,7 +127,7 @@ const page = () => {
                     <ul className={styles.ul_list}>
                         <li>
                             <article className={styles.bigTitle}>
-                               <a href></a>
+                               <a href=' '></a>
                             </article>
                         </li>
                         <li></li>
@@ -144,7 +144,7 @@ const page = () => {
                                 <sction>
                                     //作品タイトル等
                                 </sction>
-                                <a href></a>
+                                <a href=' '></a>
                             </article>
                         </li>
                     </ul>
