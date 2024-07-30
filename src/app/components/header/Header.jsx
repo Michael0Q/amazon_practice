@@ -8,18 +8,19 @@ import { LiaCartArrowDownSolid } from "react-icons/lia";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { SiPrimevideo } from 'react-icons/si';
 import { CgProfile } from "react-icons/cg";
-//test
+import amazon_logo from '../../../../public/images/header/amazon_prime.png'
+
 const Header = () => {
     return(
         <>
             <div className={styles.header}>
                 <div className={styles.left}>
-                    <div className={styles.icon}>
+                    <div className={`${styles.icon} ${styles.link}`}>
                         <Link href='/home'>
-                            <Image src='/amazon_prime.png' width={145} height={48}></Image>
+                            <Image src={amazon_logo} width={145} height={48}></Image>
                         </Link>
                     </div>
-                    <div className={styles.address}>
+                    <div className={`${styles.address} ${styles.link}`}>
                         <span className={styles.address_span}>
                             <Link href='/' className={styles.address_a}>
                                 <AiFillEnvironment className={styles.address_svg} color={'#d6d6d6'}/>
@@ -66,7 +67,7 @@ const Header = () => {
                 </div>
                 <div className={styles.right}>
                     <div className={styles.nav_tools}>
-                        <Link href={'/'} className={styles.right_country}>
+                        <Link href={'/home'} className={`${styles.right_country} ${styles.link}`}>
                             <span className={styles.country_span}>
                                 <span className={styles.country_infos}>
                                     <span className='flag-icon flag-icon-jp'></span>
@@ -75,7 +76,7 @@ const Header = () => {
                                 </span>
                             </span>
                         </Link>
-                        <Link href={'/'} className={styles.acount_list}>
+                        <Link href={'/'} className={`${styles.acount_list} ${styles.link}`}>
                             <div className={styles.acount_infos}>
                                 <span className={styles.acount_name}>佐藤さん</span>
                             </div>
@@ -84,7 +85,7 @@ const Header = () => {
                                 <span className={styles.re_triangle}>▼</span>
                             </span>
                         </Link>
-                        <Link href={'/'} className={styles.returnItems}>
+                        <Link href={'/'} className={`${styles.returnItems} ${styles.link}`}>
                             <div className={styles.acount_infos}>
                                 <span className={styles.acount_name}>返品もこちら</span>
                             </div>
@@ -92,7 +93,7 @@ const Header = () => {
                                 注文履歴
                             </span>
                         </Link>
-                        <Link href={'/'} className={styles.cart_area}>
+                        <Link href={'/'} className={`${styles.cart_area} ${styles.link}`}>
                             <div className={styles.cart_count_container}>
                                 {/* <span className={styles.cart_count}>
                                     5
@@ -110,7 +111,7 @@ const Header = () => {
             </div>
             <div className={styles.subheader}>
                 <div className={styles.subheader_left}>
-                    <Link href={'/'} className={styles.subheader_left_a}>
+                    <Link href={'/'} className={`${styles.subheader_left_a} ${styles.link}`}>
                         <GiHamburgerMenu  size={'1.5em'} color='white'/>
                         <span className={styles.subheader_left_label}>すべて</span>
                     </Link>
@@ -118,60 +119,60 @@ const Header = () => {
                 <div className={styles.subheader_middle}>
                     <div className={styles.middle_shop_container}>
                         <div className={styles.shop_labels}>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 Amazonポイント
                                 <span>:</span>
                                 &nbsp;<span color={'#f90'}>0</span>
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 ヘルプ
                             </Link>
-                            <Link href={'/'} className={styles.shop_a} style={{paddingBottom: '11px'}}>
+                            <Link href={'/'} className={`${styles.shop_a}  ${styles.link}`} style={{paddingBottom: '11px'}}>
                                 Prime&nbsp;Video
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a}  ${styles.link}`}>
                                 ランキング
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 食品＆飲料
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 再び購入
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 新着商品
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 ネットスーパー
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 ギフトカード
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 DIY・工具
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 Amazonビジネス
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 Amazonファッション
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 本
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 Kindle本
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 Amazonで売る
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 閲覧履歴
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 おもちゃ・ホビー            
                             </Link>
-                            <Link href={'/'} className={styles.shop_a}>
+                            <Link href={'/'} className={`${styles.shop_a} ${styles.link}`}>
                                 マイストア
                             </Link>
                         </div>
@@ -180,15 +181,15 @@ const Header = () => {
             </div>
             <header className={styles.primevideo_haeder}>
                 <div className={styles.primevideo_menus}>
-                    <Link href='/home'>
-                        <SiPrimevideo size={'8em'} className={styles.svg} color={'#d6d6d6'}/>
+                    <Link href='/home' className={styles.primevideo_logo_a}>
+                        <Image src="https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png" width={96} height={18}></Image>
                     </Link>
                     <div>
                         <ol className={styles.primevideo_orderedList}>
                             <li className={styles.primevideo_li}>
                                 <label className={styles.primevideo_label}>
                                     <Link href={'/home'} className={styles.primevideo_a}>ホーム</Link>
-                                    <span className={styles.re_triangle}>▼</span>
+                                    <span className={`${styles.re_triangle} ${styles.re_triangle_hover}`}>▼</span>
                                 </label>
                             </li>
                             <li className={styles.primevideo_li}>
