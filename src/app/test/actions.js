@@ -1,7 +1,7 @@
 'use server' //サーバーコンポーネントに付与する。サーバーコンポーネントとは？https://blog.to-ko-s.com/react-server-components/#i-2
 
 import { cookies } from 'next/headers'
-import { SUPABASE } from "../../../configure"
+import { SUPABASE } from "../configure"
 
 
 /**
@@ -72,8 +72,17 @@ export async function insertData(tableName, insertData) {
 export async function getCookie(key) {
     try{
         //?はnull制御。cookies().get(key)がnull/undifinedの時、にvalueを実行してエラーが出るのを防ぐ。
-        return cookies().get(key)?.value; 
+            return cookies().get(key)?.value
     }catch(error){
 
     }    
+}
+
+export async function getPicture(){
+    try{
+        const {data, error}= await SUPABASE.from("Image_mst").select('link');
+        return data[0];
+    }catch{
+
+    }
 }

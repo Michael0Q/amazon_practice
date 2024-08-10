@@ -2,11 +2,27 @@ import styles from './test.module.css'
 import { cookies } from "next/headers";
 import { getData, deleteData, insertData, getCookie } from './actions';
 import SupabaseDataTable from './SupabaseDataTable';
+import Image from 'next/image'
+import { SUPABASE } from '../configure';
 
 
 //アロー関数　() => {}
 //JavascriptのES6でfunction記法からアロー構文を推奨するようになった。https://liginc.co.jp/277527
 const Page = async () => {
+
+    //コンポーネント内にもActionは書ける
+    const getPicture = async () => {
+        'use server'
+        try{
+            const {data, error} = await SUPABASE.from("Image_mst").select('link');
+            console.log(data[0].link)
+            return data[0].link.replace(/^'|'$/g, '');
+        }catch{
+
+        }
+    }
+
+    const src = await getPicture();
 
     return(
         <>
@@ -32,6 +48,9 @@ const Page = async () => {
                     />
                 </div>
             }
+            <div>
+                <Image height={100} width={100} loading='lazy' src={src} />
+            </div>
         </>
     )
 }
