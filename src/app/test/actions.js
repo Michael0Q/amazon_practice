@@ -2,6 +2,8 @@
 
 import { cookies } from 'next/headers'
 import { SUPABASE } from "../configure"
+import { redirect } from 'next/dist/server/api-utils';
+import { NextResponse } from 'next/server';
 
 
 /**
@@ -23,7 +25,6 @@ export async function getData(formData) {
         cookies().set('tableData', data);
         cookies().set('tableName', formData.get('select'));
     } catch (error) {
-        return
     }
 }
 
@@ -50,7 +51,6 @@ export async function getHeader(formData){
         .from(tableName)
         .select('*')
         .range(0, 1);
-        console.log(Object.getOwnPropertyNames(data[0]));
         return Object.getOwnPropertyNames(data[0]);
     }catch(error){
 
@@ -62,10 +62,7 @@ export async function insertData(tableName, insertData) {
         const {data, error} = await SUPABASE
         .from(`${tableName}_mst`)
         .insert(insertData);
-        console.log(data);
-        console.log(error);
     } catch (error) {
-        return
     }
 }
 

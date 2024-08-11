@@ -11,7 +11,6 @@ Reactは元々クライアントサイドでしか使えないライブラリ。
 ・イベントハンドラーの使用
 サーバーサイドでできること
 ・データベースとのやり取り
-・HTTPリクエスト
 ・ルーティング
 */
 
@@ -62,7 +61,6 @@ const SupabaseDataTable = ({tableData, tableName}) => {
 
         insertData(tableName, data);
     }
-
     let dataColumns = 0;
     return(
         <>

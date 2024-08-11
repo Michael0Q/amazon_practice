@@ -24,6 +24,10 @@ const Page = async () => {
 
     const src = await getPicture();
 
+    //APIハンドラー　chcheオプションは、Nextjsは可能な限りキャッシュを再利用するため、それを無効化するためのオプション。
+    const response = await (await fetch(`http://localhost:3000/test/api/rowcount`, { cache: 'no-store' })).json();
+
+
     return(
         <>
         {/* actionは従来パスを渡していたが、Reactのformは関数を渡すことができる。 */}
@@ -34,6 +38,7 @@ const Page = async () => {
                     <option>Image</option>
                     <option>Movie</option>
                 </select>
+                <span>{`データ数: ${response.rowCount}  `}</span>
                 <button>取得する</button>
             </form>
             {/* 
